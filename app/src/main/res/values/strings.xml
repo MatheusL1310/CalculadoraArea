@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AreaCalculator1</string>
+    <string name="text_init">Select the shape:</string>
+    <string name="square">Square</string>
+    <string name="triangle">Triangle</string>
+    <string name="circle">Circle</string>
+    <string name="error_radiobtn">No shape selected!</string>
+    <string name="btn_next">NEXT</string>
+    <string name="text_sec">Inform the data of the </string>
+    <string name="radius">Radius: </string>
+    <string name="base">Base: </string>
+    <string name="height">Height: </string>
+</resources>

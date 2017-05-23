@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AreaCalculator1</string>
+    <string name="text_init">Selecione a forma:</string>
+    <string name="circle">Circulo</string>
+    <string name="square">Quadrado</string>
+    <string name="triangle">Triangulo</string>
+    <string name="error_radiobtn">Nenhuma forma selecionada!</string>
+    <string name="btn_next">AVANÇAR</string>
+    <string name="text_sec">"Informe os dados do "</string>
+    <string name="radius">"Raio: "</string>
+    <string name="base">"Base: "</string>
+    <string name="height">"Altura: "</string>
+</resources>
