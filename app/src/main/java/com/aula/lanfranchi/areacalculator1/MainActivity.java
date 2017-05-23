@@ -1,8 +1,8 @@
 package com.aula.lanfranchi.areacalculator1;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -38,12 +38,12 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.tri:
                     Intent intent2 = new Intent(this, Tab2Activity.class);
-                    intent2.putExtra("shape", sq.getText().toString());
+                    intent2.putExtra("shape", tri.getText().toString());
                     startActivity(intent2);
                     break;
                 case R.id.cir:
                     Intent intent3 = new Intent(this, Tab2Activity.class);
-                    intent3.putExtra("shape", sq.getText().toString());
+                    intent3.putExtra("shape", cir.getText().toString());
                     startActivity(intent3);
                     break;
             }

@@ -7,8 +7,10 @@
     <string name="triangle">Triangulo</string>
     <string name="error_radiobtn">Nenhuma forma selecionada!</string>
     <string name="btn_next">AVANÇAR</string>
-    <string name="text_sec">"Informe os dados do "</string>
+    <string name="text_sec">\"Informe os dados do: \"</string>
     <string name="radius">"Raio: "</string>
     <string name="base">"Base: "</string>
     <string name="height">"Altura: "</string>
+    <string name="area">"Área: "</string>
+    <string name="start_again">Começar Novamente</string>
 </resources>

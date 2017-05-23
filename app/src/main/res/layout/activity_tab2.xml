@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -27,7 +26,7 @@
             android:layout_marginTop="8dp"
             android:textSize="30sp"
             android:layout_weight="6"
-            android:id="@+id/form"
+            android:id="@+id/shape"
             />
     </LinearLayout>
     <Space
@@ -40,7 +39,8 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="8dp"
-        >
+        android:id="@+id/screenRadius"
+        android:visibility="invisible">
 
         <TextView
             android:id="@+id/textRadius"
@@ -50,16 +50,19 @@
             android:textSize="20sp" />
 
         <EditText
+            android:id="@+id/radiusValue"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/radiusValue"/>
+            android:inputType="numberDecimal"/>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="8dp">
+        android:padding="8dp"
+        android:id="@+id/screenOthers"
+        android:visibility="invisible">
 
         <TextView
             android:id="@+id/textBase"
@@ -67,10 +70,12 @@
             android:layout_height="wrap_content"
             android:text="@string/base"
             android:textSize="20sp" />
+
         <EditText
+            android:id="@+id/baseValue"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/baseValue"/>
+            android:inputType="numberDecimal"/>
 
         <TextView
             android:id="@+id/textHeight"
@@ -78,10 +83,12 @@
             android:layout_height="wrap_content"
             android:text="@string/height"
             android:textSize="20sp" />
+
         <EditText
+            android:id="@+id/heightValue"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/heightValue"/>
+            android:inputType="numberDecimal"/>
 
     </LinearLayout>
 
@@ -96,7 +103,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginBottom="0dp"
         android:layout_marginRight="8dp"
-
+        android:onClick="onBtnNextCalculate"
         android:backgroundTint="@color/colorPrimaryDark"
         android:text="@string/btn_next"
         android:textColor="@color/colorWhite"
