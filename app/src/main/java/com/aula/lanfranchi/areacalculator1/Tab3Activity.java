@@ -1,5 +1,6 @@
 package com.aula.lanfranchi.areacalculator1;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -18,6 +19,8 @@ public class Tab3Activity extends AppCompatActivity {
 
         Bundle intent = getIntent().getExtras();
 
+        tvResult = (TextView) findViewById(R.id.areaResult);
+
         if(intent.getString("shape").toString().equals(getString(R.string.square))){
             tvResult.setText(String.valueOf(intent.getDouble("area")));
             ivShape = (ImageView) findViewById(R.id.ivSquare);
@@ -34,5 +37,12 @@ public class Tab3Activity extends AppCompatActivity {
             ivShape.setVisibility(View.VISIBLE);
         }
 
+    }
+
+    public void onClickRestart(View v){
+        Intent intent = new Intent(this, MainActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+        finish();
     }
 }

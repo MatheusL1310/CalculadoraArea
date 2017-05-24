@@ -43,7 +43,7 @@ public class Tab2Activity extends AppCompatActivity {
     }
 
 
-    public void onBtnNextCalculate(){
+    public void onBtnNextCalculate(View v){
         Intent intent = getIntent();
         if(intent.getStringExtra("shape").toString().equals(getString(R.string.square))){
             EditText baseTxt = (EditText) findViewById(R.id.baseValue);
